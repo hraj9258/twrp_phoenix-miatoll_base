@@ -15,6 +15,6 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_miatoll.mk
+    $(LOCAL_DIR)/twrp_phoenix.mk
 
-COMMON_LUNCH_CHOICES := twrp_miatoll-eng
+COMMON_LUNCH_CHOICES := twrp_phoenix-eng
