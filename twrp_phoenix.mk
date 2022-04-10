@@ -21,11 +21,7 @@ PRODUCT_RELEASE_NAME := phoenix
 DEVICE_PATH := device/xiaomi/phoenix
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
-
-# for the amended f2fs command
-# casefolding causes encryption problems with f2fs formatting on Android 12
-# so disable this
-# $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/twrp/config/common.mk)
