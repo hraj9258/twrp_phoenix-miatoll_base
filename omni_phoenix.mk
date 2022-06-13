@@ -28,14 +28,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 # $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/twrp/config/common.mk)
+$(call inherit-product, vendor/pb/config/common.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/phoenix/device.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := phoenix
-PRODUCT_NAME := twrp_phoenix
+PRODUCT_NAME := omni_phoenix
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := POCO X2
 PRODUCT_MANUFACTURER := Xiaomi
